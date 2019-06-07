@@ -179,8 +179,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FacePacket.cpp" />
     <ClCompile Include="FaceServer.cpp" />
     <ClCompile Include="HTTPServer.cpp" />
+    <ClCompile Include="LandmarkExtractor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\lib\local\FaceAnalyser\FaceAnalyser.vcxproj">
@@ -197,7 +199,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FacePacket.h" />
     <ClInclude Include="HTTPServer.h" />
+    <ClInclude Include="LandmarkExtractor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

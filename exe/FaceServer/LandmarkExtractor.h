@@ -20,12 +20,14 @@
 class LandmarkExtractor {
 public:
 	LandmarkExtractor();
+	~LandmarkExtractor();
+	void SetupExtractor();
 
 private:
-	LandmarkDetector::FaceModelParameters det_parameters;
-	LandmarkDetector::CLNF face_model;
-	FaceAnalysis::FaceAnalyserParameters face_analysis_params;
-	FaceAnalysis::FaceAnalyser face_analyser;
+	LandmarkDetector::FaceModelParameters *det_parameters;
+	LandmarkDetector::CLNF *face_model;
+	FaceAnalysis::FaceAnalyserParameters *face_analysis_params;
+	FaceAnalysis::FaceAnalyser *face_analyser;
 	cv::Mat rgb_image;
 	cv::Mat grey_image;
 
