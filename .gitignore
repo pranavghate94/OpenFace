@@ -1,3 +1,4 @@
+.*/
 matlab_version/experiments_menpo/out_semifrontal/
 /x64/Release/
 /x64/Debug/
@@ -25,6 +26,10 @@ lib/local/FaceAnalyser/Debug/
 lib/3rdParty/dlib/Release/
 lib/3rdParty/dlib/Debug/
 *.ipch
+exe/FaceServer/Debug/
+exe/FaceServer/x64
+exe/FaceServer/Release
+exe/FaceServer/x86
 exe/Recording/x64/
 exe/Recording/Debug/
 exe/FeatureExtraction/x64/
