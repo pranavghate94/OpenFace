@@ -27,6 +27,9 @@
     <ClCompile Include="FacePacket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HTTPServer.h">
@@ -36,6 +39,9 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
     <ClInclude Include="FacePacket.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>

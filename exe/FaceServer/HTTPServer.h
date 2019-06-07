@@ -1,10 +1,13 @@
 #pragma once
 
+
 #include "cpprest/json.h"
 #include "cpprest/http_listener.h"
 #include "cpprest/uri.h"
 #include "cpprest/asyncrt_utils.h"
+#include <string>
 
+#include "LandmarkExtractor.h"
 
 using namespace web;
 using namespace http;
@@ -20,5 +23,7 @@ public:
 private:
 	void handle_get(http_request message);
 	void handle_post(http_request message);
+	void display_json(json::value const &jvalue, utility::string_t const & prefix);
 	http_listener m_listener;
+	LandmarkExtractor *extractor;
 };

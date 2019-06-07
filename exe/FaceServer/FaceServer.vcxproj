@@ -179,6 +179,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Base64.cpp" />
     <ClCompile Include="FacePacket.cpp" />
     <ClCompile Include="FaceServer.cpp" />
     <ClCompile Include="HTTPServer.cpp" />
@@ -199,6 +200,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Base64.h" />
     <ClInclude Include="FacePacket.h" />
     <ClInclude Include="HTTPServer.h" />
     <ClInclude Include="LandmarkExtractor.h" />

@@ -7,6 +7,9 @@
 #include "LandmarkExtractor.h"
 
 
+#define LOG(msg) \
+    std::cout << __FILE__ << "(" << __LINE__ << "): " << msg << std::endl 
+
 using namespace web;
 using namespace http;
 using namespace utility;
@@ -29,10 +32,6 @@ void on_shutdown() {
 }
 
 int wmain(int argc, wchar_t* argv[]) {
-
-	LandmarkExtractor *extractor = new LandmarkExtractor();
-	extractor->SetupExtractor();
-
 
 	std::string port = "3030";
 	std::string address = "http://localhost:";
