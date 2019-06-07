@@ -22,6 +22,7 @@ public:
 	LandmarkExtractor();
 	~LandmarkExtractor();
 	void SetupExtractor();
+	
 
 private:
 	LandmarkDetector::FaceModelParameters *det_parameters;

@@ -26,6 +26,9 @@ lib/local/FaceAnalyser/Debug/
 lib/3rdParty/dlib/Release/
 lib/3rdParty/dlib/Debug/
 *.ipch
+lib/3rdParty/OpenCV/bin/
+lib/3rdParty/OpenCV/x64/v141/bin/
+lib/3rdParty/OpenCV/x86/v141/bin/
 exe/FaceServer/Debug/
 exe/FaceServer/x64
 exe/FaceServer/Release

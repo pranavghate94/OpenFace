@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include "HTTPServer.h"
+#include "LandmarkExtractor.h"
+
 
 using namespace web;
 using namespace http;
@@ -27,6 +29,11 @@ void on_shutdown() {
 }
 
 int wmain(int argc, wchar_t* argv[]) {
+
+	LandmarkExtractor *extractor = new LandmarkExtractor();
+	extractor->SetupExtractor();
+
+
 	std::string port = "3030";
 	std::string address = "http://localhost:";
 	address.append(port);
